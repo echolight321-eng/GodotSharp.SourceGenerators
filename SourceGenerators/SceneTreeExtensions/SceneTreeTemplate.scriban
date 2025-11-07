@@ -16,17 +16,7 @@ end
 
 {{~ end -}}
 
-{{- func render_leaf(node, indent) ~}}
 
-{{indent}}        [EditorBrowsable(EditorBrowsableState.Never)]
-{{indent}}        private {{node.Value.Type}} _{{node.Value.Name}};
-
-{{indent}}        [EditorBrowsable(EditorBrowsableState.Never)]
-{{indent}}        private Godot.NodePath _{{node.Value.Name}}Path;
-
-{{indent}}        public {{node.Value.Type}} {{node.Value.Name}} => _{{node.Value.Name}} ??=
-{{indent}}            _root.GetNodeOrNull<{{node.Value.Type}}>(_{{node.Value.Name}}Path ??= "{{node.Value.Path}}");
-{{~ end -}}
 
 {{- func render_branch(node, depth, indent) ~}}
 
@@ -65,11 +55,7 @@ end
 
 {{-
 func render_tree(node, depth=0, indent="")
-    if node.Children | array.filter @visible | array.size == 0
-        render_leaf node indent
-    else
-        render_branch node depth indent
-    end
+    render_branch node depth indent
 end
 -}}
 

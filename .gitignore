@@ -9,3 +9,10 @@
 *.import
 *.material
 *.csproj.old
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/vcs.xml
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/indexLayout.xml
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/encodings.xml
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/copilot.data.migration.edit.xml
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/copilot.data.migration.ask2agent.xml
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/copilot.data.migration.ask.xml
+SourceGenerators/.idea/.idea.SourceGenerators/.idea/copilot.data.migration.agent.xml
